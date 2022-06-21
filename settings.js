@@ -11,8 +11,11 @@ document.getElementById("save").onclick=function () {
 document.getElementById("reset").onclick=function () {
 	// var webhook_setting = {};
 	document.getElementById('url').value = "";
+	document.getElementById('method').value = "GET";
 	document.getElementById('arg').value = "";
 	document.getElementById('headers').value = "{}";
+	let webhook_setting = {"url":"","method":"GET", "arg":"","headers":{}};
+	browser.storage.local.set({"webhook_setting": webhook_setting});
 	// console.log(webhook_setting);
 }
 
