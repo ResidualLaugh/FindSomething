@@ -3,8 +3,11 @@
   "version": "2.0.7",
   "manifest_version": 2,
   "description": "在网页的源代码或js中找到一些有趣的东西",  
-  "permissions": [     
-    "tabs"
+  "permissions": [   
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "storage"
   ],
   "content_scripts": [{
       "matches": [
