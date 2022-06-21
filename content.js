@@ -110,7 +110,7 @@ browser.storage.local.get(["global_float"], function(settings){
     <findsomething-div id="findsomething_neko" style="width:410px;height:500px;font-size:14px;color:#000000;box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1) ;background-color: #fff;border-radius: 5px;border: 1px solid #ebebeb;left:20px;top:20px;position: fixed;z-index: 1000000;overflow:scroll;">
           <findsomething-div id="findsomething_neko-title" style="display: flex;justify-content: space-between;">
             <findsomething-div id="findsomething_taskstatus" style="height: 34px; line-height: 34px; margin-left: 10px;"></findsomething-div>
-            <findsomething-div style="cursor: pointer;margin-top: 2px;margin-right: 10px;" onclick='(function(){document.getElementById("findsomething-float-div").removeChild(document.getElementById("neko"));})()'>隐藏</findsomething-div>
+            <findsomething-div style="cursor: pointer;margin-top: 2px;margin-right: 10px;" onclick='(function(){document.getElementById("findsomething-float-div").removeChild(document.getElementById("findsomething_neko"));})()'>隐藏</findsomething-div>
           </findsomething-div>
             <findsomething-div style="width: 300px; margin-top: 10px;">
                 <findsomething-div class="findsomething-title">IP<button type="button" class="findsomething_copy" name="ip">复制</button></findsomething-div>
